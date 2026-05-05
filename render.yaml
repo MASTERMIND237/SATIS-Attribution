@@ -2,7 +2,7 @@ services:
   - type: web
     name: satis-attribution-backend
     runtime: python
-    rootDir: env/backend
+    # rootDir: env/backend
     plan: free
     autoDeployTrigger: commit
     buildCommand: pip install .
