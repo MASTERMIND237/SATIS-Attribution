@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: satis-attribution-backend
+    runtime: python
+    rootDir: env/backend
+    plan: free
+    autoDeployTrigger: commit
+    buildCommand: pip install .
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health/database
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.14.3
+      - key: DATABASE_CONNECT_TIMEOUT
+        value: "5"
