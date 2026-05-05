@@ -26,3 +26,6 @@ testpaths = ["tests"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["app"]
+
+[tool.poetry]
+package-mode = false
