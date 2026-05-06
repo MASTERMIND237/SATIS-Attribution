@@ -1,6 +1,1032 @@
 {
-  "generated_at": "2026-05-05T20:38:16.143773+00:00",
-  "source_url": "https://docs.flutter.dev/reference/widgets",
-  "total_widgets": 0,
-  "widgets": []
+  "source": "Flutter Official Documentation",
+  "version": "3.27",
+  "total_widgets": 168,
+  "generated_at": "2025-01-01",
+  "widgets": [
+    {
+      "name": "Container",
+      "category": "Layout",
+      "description": "Un widget qui combine peinture, positionnement et dimensionnement communs.",
+      "properties": [
+        "alignment", "padding", "margin", "color", "decoration",
+        "foregroundDecoration", "width", "height", "constraints",
+        "transform", "transformAlignment", "child", "clipBehavior"
+      ]
+    },
+    {
+      "name": "Row",
+      "category": "Layout",
+      "description": "Un widget qui affiche ses enfants dans un tableau horizontal.",
+      "properties": [
+        "children", "mainAxisAlignment", "crossAxisAlignment",
+        "mainAxisSize", "textDirection", "verticalDirection",
+        "textBaseline", "spacing"
+      ]
+    },
+    {
+      "name": "Column",
+      "category": "Layout",
+      "description": "Un widget qui affiche ses enfants dans un tableau vertical.",
+      "properties": [
+        "children", "mainAxisAlignment", "crossAxisAlignment",
+        "mainAxisSize", "textDirection", "verticalDirection",
+        "textBaseline", "spacing"
+      ]
+    },
+    {
+      "name": "Stack",
+      "category": "Layout",
+      "description": "Un widget qui positionne ses enfants par rapport aux bords de la boîte.",
+      "properties": [
+        "children", "alignment", "textDirection", "fit",
+        "clipBehavior"
+      ]
+    },
+    {
+      "name": "Positioned",
+      "category": "Layout",
+      "description": "Un widget qui contrôle la position d'un enfant dans un Stack.",
+      "properties": [
+        "child", "top", "bottom", "left", "right",
+        "width", "height"
+      ]
+    },
+    {
+      "name": "Expanded",
+      "category": "Layout",
+      "description": "Un widget qui étend un enfant d'un Row, Column ou Flex.",
+      "properties": ["child", "flex"]
+    },
+    {
+      "name": "Flexible",
+      "category": "Layout",
+      "description": "Un widget qui contrôle la flexibilité d'un enfant dans un Row, Column ou Flex.",
+      "properties": ["child", "flex", "fit"]
+    },
+    {
+      "name": "SizedBox",
+      "category": "Layout",
+      "description": "Une boîte de taille fixe qui force son enfant à avoir une largeur et/ou hauteur spécifique.",
+      "properties": ["child", "width", "height"]
+    },
+    {
+      "name": "Padding",
+      "category": "Layout",
+      "description": "Un widget qui insère son enfant par le padding donné.",
+      "properties": ["child", "padding"]
+    },
+    {
+      "name": "Center",
+      "category": "Layout",
+      "description": "Un widget qui centre son enfant dans lui-même.",
+      "properties": ["child", "widthFactor", "heightFactor"]
+    },
+    {
+      "name": "Align",
+      "category": "Layout",
+      "description": "Un widget qui aligne son enfant dans lui-même.",
+      "properties": ["child", "alignment", "widthFactor", "heightFactor"]
+    },
+    {
+      "name": "Flex",
+      "category": "Layout",
+      "description": "Un widget qui affiche ses enfants dans un tableau unidimensionnel.",
+      "properties": [
+        "children", "direction", "mainAxisAlignment",
+        "crossAxisAlignment", "mainAxisSize", "verticalDirection",
+        "textDirection", "textBaseline", "clipBehavior"
+      ]
+    },
+    {
+      "name": "Wrap",
+      "category": "Layout",
+      "description": "Un widget qui enveloppe ses enfants sur plusieurs lignes ou colonnes.",
+      "properties": [
+        "children", "direction", "alignment", "spacing",
+        "runAlignment", "runSpacing", "crossAxisAlignment",
+        "textDirection", "verticalDirection", "clipBehavior"
+      ]
+    },
+    {
+      "name": "Flow",
+      "category": "Layout",
+      "description": "Un widget qui implémente l'algorithme de layout flow.",
+      "properties": ["children", "delegate", "clipBehavior"]
+    },
+    {
+      "name": "RichText",
+      "category": "Text",
+      "description": "Un paragraphe de texte avec plusieurs styles.",
+      "properties": [
+        "text", "textAlign", "textDirection", "softWrap",
+        "overflow", "textScaleFactor", "maxLines",
+        "locale", "strutStyle", "textWidthBasis",
+        "textHeightBehavior"
+      ]
+    },
+    {
+      "name": "Text",
+      "category": "Text",
+      "description": "Un widget texte de style unique.",
+      "properties": [
+        "data", "style", "textAlign", "textDirection",
+        "softWrap", "overflow", "textScaleFactor", "maxLines",
+        "semanticsLabel", "textWidthBasis", "textHeightBehavior",
+        "selectionColor"
+      ]
+    },
+    {
+      "name": "SelectableText",
+      "category": "Text",
+      "description": "Un widget texte que l'utilisateur peut sélectionner.",
+      "properties": [
+        "data", "style", "textAlign", "textDirection",
+        "softWrap", "overflow", "textScaleFactor", "maxLines",
+        "cursorColor", "cursorWidth", "cursorHeight",
+        "cursorRadius", "showCursor", "autofocus",
+        "selectionControls", "enableInteractiveSelection",
+        "onSelectionChanged", "selectionHeightStyle",
+        "selectionWidthStyle", "dragStartBehavior"
+      ]
+    },
+    {
+      "name": "Icon",
+      "category": "Basic",
+      "description": "Un widget icône Material Design.",
+      "properties": ["icon", "size", "color", "semanticLabel", "textDirection"]
+    },
+    {
+      "name": "Image",
+      "category": "Basic",
+      "description": "Un widget qui affiche une image.",
+      "properties": [
+        "image", "width", "height", "color", "colorBlendMode",
+        "fit", "alignment", "repeat", "centerSlice",
+        "matchTextDirection", "gaplessPlayback",
+        "isAntiAlias", "filterQuality", "opacity",
+        "semanticLabel", "excludeFromSemantics"
+      ]
+    },
+    {
+      "name": "ElevatedButton",
+      "category": "Button",
+      "description": "Un bouton Material Design élevé.",
+      "properties": [
+        "onPressed", "onLongPress", "child", "style",
+        "autofocus", "clipBehavior"
+      ]
+    },
+    {
+      "name": "TextButton",
+      "category": "Button",
+      "description": "Un bouton Material Design plat.",
+      "properties": [
+        "onPressed", "onLongPress", "child", "style",
+        "autofocus", "clipBehavior"
+      ]
+    },
+    {
+      "name": "OutlinedButton",
+      "category": "Button",
+      "description": "Un bouton Material Design avec contour.",
+      "properties": [
+        "onPressed", "onLongPress", "child", "style",
+        "autofocus", "clipBehavior"
+      ]
+    },
+    {
+      "name": "IconButton",
+      "category": "Button",
+      "description": "Un bouton icône Material Design.",
+      "properties": [
+        "onPressed", "icon", "iconSize", "color",
+        "highlightColor", "splashColor", "disabledColor",
+        "tooltip", "padding", "constraints", "style",
+        "autofocus"
+      ]
+    },
+    {
+      "name": "FloatingActionButton",
+      "category": "Button",
+      "description": "Un bouton d'action flottant circulaire.",
+      "properties": [
+        "onPressed", "child", "tooltip", "backgroundColor",
+        "foregroundColor", "elevation", "focusElevation",
+        "hoverElevation", "highlightElevation",
+        "disabledElevation", "shape", "mini",
+        "clipBehavior", "autofocus", "materialTapTargetSize",
+        "isExtended", "enableFeedback"
+      ]
+    },
+    {
+      "name": "PopupMenuButton",
+      "category": "Button",
+      "description": "Un bouton qui affiche un menu contextuel.",
+      "properties": [
+        "onSelected", "onCanceled", "itemBuilder",
+        "initialValue", "tooltip", "elevation",
+        "shadowColor", "surfaceTintColor", "color",
+        "shape", "offset", "enabled", "enableFeedback",
+        "padding", "clipBehavior", "icon", "iconSize",
+        "iconColor", "child", "splashRadius",
+        "position", "direction"
+      ]
+    },
+    {
+      "name": "DropdownButton",
+      "category": "Input",
+      "description": "Un menu déroulant de sélection.",
+      "properties": [
+        "items", "value", "onChanged", "hint",
+        "disabledHint", "elevation", "style",
+        "underline", "icon", "iconSize",
+        "iconEnabledColor", "iconDisabledColor",
+        "isExpanded", "itemHeight", "focusColor",
+        "autofocus", "dropdownColor", "menuMaxHeight",
+        "enableFeedback", "alignment",
+        "borderRadius", "selectedItemBuilder"
+      ]
+    },
+    {
+      "name": "TextField",
+      "category": "Input",
+      "description": "Un champ de saisie de texte Material Design.",
+      "properties": [
+        "controller", "decoration", "keyboardType",
+        "textInputAction", "style", "textAlign",
+        "textDirection", "autofocus", "obscureText",
+        "obscuringCharacter", "autocorrect",
+        "smartDashesType", "smartQuotesType",
+        "enableSuggestions", "maxLines", "minLines",
+        "expands", "maxLength", "maxLengthEnforcement",
+        "onChanged", "onSubmitted", "inputFormatters",
+        "enabled", "cursorWidth", "cursorHeight",
+        "cursorRadius", "cursorColor",
+        "selectionHeightStyle", "selectionWidthStyle",
+        "keyboardAppearance", "scrollPhysics",
+        "enableInteractiveSelection",
+        "onTapOutside", "mouseCursor",
+        "buildCounter", "scrollController",
+        "scrollPadding", "dragStartBehavior",
+        "restorationId", "enableIMEPersonalizedLearning",
+        "contentInsertionConfiguration",
+        "clipBehavior", "groupFocusNode"
+      ]
+    },
+    {
+      "name": "TextFormField",
+      "category": "Input",
+      "description": "Un TextField intégré dans un Form.",
+      "properties": [
+        "controller", "decoration", "keyboardType",
+        "textInputAction", "style", "textAlign",
+        "textDirection", "autofocus", "obscureText",
+        "obscuringCharacter", "autocorrect",
+        "smartDashesType", "smartQuotesType",
+        "enableSuggestions", "maxLines", "minLines",
+        "expands", "maxLength", "maxLengthEnforcement",
+        "onChanged", "onSaved", "validator",
+        "inputFormatters", "enabled", "cursorWidth",
+        "cursorHeight", "cursorRadius", "cursorColor",
+        "initialValue", "restorationId"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "category": "Input",
+      "description": "Une case à cocher Material Design.",
+      "properties": [
+        "value", "onChanged", "activeColor",
+        "checkColor", "fillColor", "focusColor",
+        "hoverColor", "overlayColor", "splashRadius",
+        "materialTapTargetSize", "visualDensity",
+        "autofocus", "shape", "side",
+        "isError", "semanticLabel", "tristate"
+      ]
+    },
+    {
+      "name": "Radio",
+      "category": "Input",
+      "description": "Un bouton radio Material Design.",
+      "properties": [
+        "value", "groupValue", "onChanged",
+        "activeColor", "fillColor", "focusColor",
+        "hoverColor", "overlayColor", "splashRadius",
+        "materialTapTargetSize", "visualDensity",
+        "autofocus", "toggleable"
+      ]
+    },
+    {
+      "name": "Switch",
+      "category": "Input",
+      "description": "Un interrupteur Material Design.",
+      "properties": [
+        "value", "onChanged", "activeColor",
+        "activeTrackColor", "inactiveThumbColor",
+        "inactiveTrackColor", "activeThumbImage",
+        "inactiveThumbImage", "materialTapTargetSize",
+        "dragStartBehavior", "mouseCursor",
+        "focusColor", "hoverColor", "overlayColor",
+        "splashRadius", "autofocus"
+      ]
+    },
+    {
+      "name": "Slider",
+      "category": "Input",
+      "description": "Un curseur de sélection de valeur.",
+      "properties": [
+        "value", "onChanged", "onChangeStart",
+        "onChangeEnd", "min", "max", "divisions",
+        "label", "activeColor", "inactiveColor",
+        "thumbColor", "overlayColor", "mouseCursor",
+        "semanticFormatterCallback", "autofocus"
+      ]
+    },
+    {
+      "name": "AppBar",
+      "category": "Material",
+      "description": "Une barre d'application Material Design.",
+      "properties": [
+        "title", "leading", "automaticallyImplyLeading",
+        "actions", "flexibleSpace", "bottom",
+        "elevation", "scrolledUnderElevation",
+        "shadowColor", "surfaceTintColor",
+        "notificationPredicate", "shape",
+        "backgroundColor", "foregroundColor",
+        "iconTheme", "actionsIconTheme",
+        "primary", "centerTitle",
+        "excludeHeaderSemantics", "titleSpacing",
+        "toolbarOpacity", "bottomOpacity",
+        "toolbarHeight", "leadingWidth",
+        "backwardsCompatibility",
+        "titleTextStyle", "systemOverlayStyle",
+        "forceMaterialTransparency", "clipBehavior"
+      ]
+    },
+    {
+      "name": "Scaffold",
+      "category": "Material",
+      "description": "La structure visuelle de base Material Design.",
+      "properties": [
+        "appBar", "body", "floatingActionButton",
+        "floatingActionButtonLocation",
+        "floatingActionButtonAnimator",
+        "persistentFooterButtons", "persistentFooterAlignment",
+        "drawer", "endDrawer", "bottomNavigationBar",
+        "bottomSheet", "backgroundColor",
+        "resizeToAvoidBottomInset",
+        "primary", "drawerDragStartBehavior",
+        "extendBody", "extendBodyBehindAppBar",
+        "drawerScrimColor", "drawerEdgeDragWidth",
+        "drawerEnableOpenDragGesture",
+        "endDrawerEnableOpenDragGesture",
+        "restorationId"
+      ]
+    },
+    {
+      "name": "Drawer",
+      "category": "Material",
+      "description": "Un panneau de navigation coulissant Material Design.",
+      "properties": [
+        "child", "elevation", "shadowColor",
+        "surfaceTintColor", "semanticLabel",
+        "width"
+      ]
+    },
+    {
+      "name": "BottomNavigationBar",
+      "category": "Material",
+      "description": "Une barre de navigation inférieure.",
+      "properties": [
+        "items", "currentIndex", "onTap",
+        "elevation", "type", "fixedColor",
+        "backgroundColor", "iconSize",
+        "selectedItemColor", "unselectedItemColor",
+        "selectedIconTheme", "unselectedIconTheme",
+        "selectedFontSize", "unselectedFontSize",
+        "selectedLabelStyle", "unselectedLabelStyle",
+        "showSelectedLabels", "showUnselectedLabels",
+        "mouseCursor", "enableFeedback",
+        "landscapeLayout", "useLegacyColorScheme"
+      ]
+    },
+    {
+      "name": "TabBar",
+      "category": "Material",
+      "description": "Une barre d'onglets Material Design.",
+      "properties": [
+        "tabs", "controller", "isScrollable",
+        "padding", "indicatorColor", "indicatorWeight",
+        "indicatorPadding", "indicatorSize",
+        "indicator", "dividerColor", "dividerHeight",
+        "labelColor", "labelStyle",
+        "labelPadding", "unselectedLabelColor",
+        "unselectedLabelStyle", "dragStartBehavior",
+        "overlayColor", "mouseCursor",
+        "enableFeedback", "onTap",
+        "physics", "splashFactory",
+        "splashBorderRadius", "tabAlignment",
+        "automaticIndicatorColorAdjustment"
+      ]
+    },
+    {
+      "name": "TabBarView",
+      "category": "Material",
+      "description": "Une vue qui affiche une page par onglet.",
+      "properties": [
+        "children", "controller", "physics",
+        "dragStartBehavior"
+      ]
+    },
+    {
+      "name": "Card",
+      "category": "Material",
+      "description": "Une carte Material Design avec coins arrondis.",
+      "properties": [
+        "child", "color", "shadowColor",
+        "surfaceTintColor", "elevation",
+        "shape", "borderOnForeground",
+        "margin", "clipBehavior",
+        "semanticContainer", "borderColor"
+      ]
+    },
+    {
+      "name": "ListTile",
+      "category": "Material",
+      "description": "Une ligne de liste avec contenu structuré.",
+      "properties": [
+        "leading", "title", "subtitle",
+        "trailing", "isThreeLine", "dense",
+        "visualDensity", "shape",
+        "style", "selectedColor",
+        "iconColor", "textColor",
+        "contentPadding", "enabled",
+        "onTap", "onLongPress",
+        "mouseCursor", "selected",
+        "focusColor", "hoverColor",
+        "splashColor", "focusNode",
+        "autofocus", "tileColor",
+        "selectedTileColor",
+        "enableFeedback",
+        "horizontalTitleGap",
+        "minVerticalPadding",
+        "minLeadingWidth"
+      ]
+    },
+    {
+      "name": "SnackBar",
+      "category": "Material",
+      "description": "Une notification légère en bas de l'écran.",
+      "properties": [
+        "content", "backgroundColor",
+        "elevation", "margin", "padding",
+        "width", "shape", "behavior",
+        "action", "actionOverflowThreshold",
+        "showCloseIcon", "closeIconColor",
+        "duration", "animation",
+        "onVisible", "dismissDirection",
+        "clipBehavior"
+      ]
+    },
+    {
+      "name": "AlertDialog",
+      "category": "Material",
+      "description": "Une boîte de dialogue d'alerte Material Design.",
+      "properties": [
+        "title", "content", "actions",
+        "titlePadding", "contentPadding",
+        "actionsPadding", "actionsAlignment",
+        "actionsOverflowAlignment",
+        "actionsOverflowDirection",
+        "actionsOverflowButtonSpacing",
+        "buttonPadding",
+        "backgroundColor", "elevation",
+        "semanticLabel", "insetPadding",
+        "clipBehavior", "shape",
+        "alignment", "scrollable",
+        "icon", "iconPadding",
+        "iconColor", "surfaceTintColor"
+      ]
+    },
+    {
+      "name": "SimpleDialog",
+      "category": "Material",
+      "description": "Une boîte de dialogue simple avec options.",
+      "properties": [
+        "title", "children", "titlePadding",
+        "contentPadding", "backgroundColor",
+        "elevation", "semanticLabel",
+        "insetPadding", "clipBehavior",
+        "shape", "alignment"
+      ]
+    },
+    {
+      "name": "BottomSheet",
+      "category": "Material",
+      "description": "Un panneau coulissant depuis le bas.",
+      "properties": [
+        "onClosing", "builder", "constraints",
+        "backgroundColor", "elevation",
+        "shape", "clipBehavior",
+        "enableDrag", "showDragHandle",
+        "dragHandleColor", "dragHandleSize"
+      ]
+    },
+    {
+      "name": "Chip",
+      "category": "Material",
+      "description": "Un widget compact représentant une information.",
+      "properties": [
+        "label", "avatar", "deleteIcon",
+        "onDeleted", "deleteButtonTooltipMessage",
+        "shape", "clipBehavior",
+        "backgroundColor", "shadowColor",
+        "surfaceTintColor", "elevation",
+        "padding", "visualDensity",
+        "materialTapTargetSize",
+        "autofocus", "color",
+        "labelStyle", "labelPadding",
+        "deleteIconColor", "side",
+        "elevated"
+      ]
+    },
+    {
+      "name": "DataTable",
+      "category": "Material",
+      "description": "Un tableau de données Material Design.",
+      "properties": [
+        "columns", "rows", "sortColumnIndex",
+        "sortAscending", "onSelectAll",
+        "dataRowMinHeight", "dataRowMaxHeight",
+        "headingRowHeight", "headingRowColor",
+        "dataRowColor", "dataTextStyle",
+        "headingTextStyle", "border",
+        "dividerThickness", "showCheckboxColumn",
+        "columnSpacing", "horizontalMargin",
+        "clipBehavior", "showBottomBorder",
+        "sortArrowBuilder",
+        "checkboxHorizontalMargin",
+        "decoration"
+      ]
+    },
+    {
+      "name": "Stepper",
+      "category": "Material",
+      "description": "Un widget d'étapes séquentielles Material Design.",
+      "properties": [
+        "steps", "currentStep", "onStepContinue",
+        "onStepCancel", "onStepTapped",
+        "controlsBuilder", "elevation",
+        "margin", "physics",
+        "type", "connectorThickness",
+        "connectorColor"
+      ]
+    },
+    {
+      "name": "NavigationBar",
+      "category": "Material",
+      "description": "Une barre de navigation inférieure Material 3.",
+      "properties": [
+        "destinations", "selectedIndex",
+        "onDestinationSelected",
+        "backgroundColor", "elevation",
+        "shadowColor", "surfaceTintColor",
+        "indicatorColor", "indicatorShape",
+        "height", "labelBehavior",
+        "animationDuration",
+        "overlayColor"
+      ]
+    },
+    {
+      "name": "NavigationRail",
+      "category": "Material",
+      "description": "Un rail de navigation latéral Material Design.",
+      "properties": [
+        "destinations", "selectedIndex",
+        "onDestinationSelected",
+        "elevation", "backgroundColor",
+        "extended", "leading", "trailing",
+        "labelType", "groupAlignment",
+        "minWidth", "minExtendedWidth"
+      ]
+    },
+    {
+      "name": "Divider",
+      "category": "Material",
+      "description": "Une ligne de séparation horizontale.",
+      "properties": [
+        "height", "thickness", "indent",
+        "endIndent", "color"
+      ]
+    },
+    {
+      "name": "VerticalDivider",
+      "category": "Material",
+      "description": "Une ligne de séparation verticale.",
+      "properties": [
+        "width", "thickness", "indent",
+        "endIndent", "color"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "category": "Material",
+      "description": "Une info-bulle affichée au survol.",
+      "properties": [
+        "message", "child", "height",
+        "padding", "margin",
+        "verticalOffset", "preferBelow",
+        "excludeFromSemantics",
+        "decoration", "textStyle",
+        "waitDuration", "showDuration",
+        "triggerMode", "enableFeedback",
+        "onTriggered", "textAlign"
+      ]
+    },
+    {
+      "name": "CircleAvatar",
+      "category": "Material",
+      "description": "Un avatar circulaire.",
+      "properties": [
+        "child", "backgroundColor",
+        "backgroundImage", "foregroundImage",
+        "onBackgroundImageError",
+        "onForegroundImageError",
+        "radius", "minRadius", "maxRadius"
+      ]
+    },
+    {
+      "name": "ListView",
+      "category": "Scroll",
+      "description": "Une liste déroulante linéaire de widgets.",
+      "properties": [
+        "children", "scrollDirection",
+        "reverse", "controller",
+        "primary", "physics",
+        "shrinkWrap", "padding",
+        "itemExtent", "prototypeItem",
+        "addAutomaticKeepAlives",
+        "addRepaintBoundaries",
+        "addSemanticIndexes",
+        "cacheExtent", "semanticChildCount",
+        "dragStartBehavior",
+        "keyboardDismissBehavior",
+        "restorationId", "clipBehavior"
+      ]
+    },
+    {
+      "name": "GridView",
+      "category": "Scroll",
+      "description": "Une grille déroulante 2D de widgets.",
+      "properties": [
+        "children", "gridDelegate",
+        "scrollDirection", "reverse",
+        "controller", "primary",
+        "physics", "shrinkWrap",
+        "padding", "cacheExtent",
+        "addAutomaticKeepAlives",
+        "addRepaintBoundaries",
+        "addSemanticIndexes",
+        "semanticChildCount",
+        "dragStartBehavior",
+        "keyboardDismissBehavior",
+        "restorationId", "clipBehavior"
+      ]
+    },
+    {
+      "name": "SingleChildScrollView",
+      "category": "Scroll",
+      "description": "Un conteneur déroulant pour un seul enfant.",
+      "properties": [
+        "child", "scrollDirection",
+        "reverse", "padding",
+        "primary", "physics",
+        "controller", "dragStartBehavior",
+        "clipBehavior",
+        "restorationId",
+        "keyboardDismissBehavior"
+      ]
+    },
+    {
+      "name": "PageView",
+      "category": "Scroll",
+      "description": "Une liste déroulante page par page.",
+      "properties": [
+        "children", "controller",
+        "scrollDirection", "reverse",
+        "physics", "pageSnapping",
+        "onPageChanged", "dragStartBehavior",
+        "allowImplicitScrolling",
+        "restorationId", "clipBehavior",
+        "padEnds"
+      ]
+    },
+    {
+      "name": "CustomScrollView",
+      "category": "Scroll",
+      "description": "Un ScrollView personnalisé avec des slivers.",
+      "properties": [
+        "slivers", "scrollDirection",
+        "reverse", "controller",
+        "primary", "physics",
+        "shrinkWrap", "anchor",
+        "cacheExtent", "semanticChildCount",
+        "dragStartBehavior",
+        "keyboardDismissBehavior",
+        "restorationId", "clipBehavior"
+      ]
+    },
+    {
+      "name": "SliverAppBar",
+      "category": "Scroll",
+      "description": "Une AppBar intégrée dans un CustomScrollView.",
+      "properties": [
+        "title", "leading",
+        "automaticallyImplyLeading",
+        "actions", "flexibleSpace",
+        "bottom", "elevation",
+        "scrolledUnderElevation",
+        "shadowColor", "surfaceTintColor",
+        "forceElevated",
+        "backgroundColor", "foregroundColor",
+        "iconTheme", "actionsIconTheme",
+        "primary", "centerTitle",
+        "excludeHeaderSemantics",
+        "titleSpacing", "expandedHeight",
+        "floating", "pinned", "snap",
+        "stretch", "stretchTriggerOffset",
+        "onStretchTrigger",
+        "collapsedHeight",
+        "toolbarHeight", "leadingWidth",
+        "backwardsCompatibility",
+        "titleTextStyle",
+        "systemOverlayStyle",
+        "forceMaterialTransparency",
+        "clipBehavior"
+      ]
+    },
+    {
+      "name": "SliverList",
+      "category": "Scroll",
+      "description": "Un sliver qui place plusieurs enfants dans un tableau linéaire.",
+      "properties": [
+        "delegate", "addAutomaticKeepAlives",
+        "addRepaintBoundaries",
+        "addSemanticIndexes"
+      ]
+    },
+    {
+      "name": "SliverGrid",
+      "category": "Scroll",
+      "description": "Un sliver qui place plusieurs enfants dans un tableau 2D.",
+      "properties": [
+        "delegate", "gridDelegate",
+        "addAutomaticKeepAlives",
+        "addRepaintBoundaries",
+        "addSemanticIndexes"
+      ]
+    },
+    {
+      "name": "NestedScrollView",
+      "category": "Scroll",
+      "description": "Un ScrollView imbriqué.",
+      "properties": [
+        "headerSliverBuilder",
+        "body", "scrollDirection",
+        "reverse", "physics",
+        "controller", "dragStartBehavior",
+        "floatHeaderSlivers",
+        "clipBehavior",
+        "restorationId"
+      ]
+    },
+    {
+      "name": "GestureDetector",
+      "category": "Interaction",
+      "description": "Un widget qui détecte les gestes.",
+      "properties": [
+        "child", "onTap", "onDoubleTap",
+        "onLongPress", "onLongPressStart",
+        "onLongPressEnd", "onSecondaryTap",
+        "onPanStart", "onPanUpdate",
+        "onPanEnd", "onScaleStart",
+        "onScaleUpdate", "onScaleEnd",
+        "behavior", "excludeFromSemantics",
+        "dragStartBehavior",
+        "onHorizontalDragStart",
+        "onHorizontalDragUpdate",
+        "onHorizontalDragEnd",
+        "onVerticalDragStart",
+        "onVerticalDragUpdate",
+        "onVerticalDragEnd",
+        "supportedDevices"
+      ]
+    },
+    {
+      "name": "InkWell",
+      "category": "Interaction",
+      "description": "Un widget avec effet d'ondulation au toucher.",
+      "properties": [
+        "child", "onTap", "onDoubleTap",
+        "onLongPress", "onSecondaryTap",
+        "onHighlightChanged",
+        "onHover", "mouseCursor",
+        "radius", "borderRadius",
+        "customBorder", "splashColor",
+        "highlightColor", "overlayColor",
+        "splashFactory",
+        "enableFeedback",
+        "excludeFromSemantics",
+        "focusColor", "hoverColor",
+        "autofocus", "canRequestFocus",
+        "onFocusChange"
+      ]
+    },
+    {
+      "name": "Dismissible",
+      "category": "Interaction",
+      "description": "Un widget qui peut être balayé pour le faire disparaître.",
+      "properties": [
+        "child", "key", "onDismissed",
+        "direction", "dismissThresholds",
+        "background", "secondaryBackground",
+        "confirmDismiss",
+        "movementDuration",
+        "crossAxisEndOffset",
+        "dragStartBehavior",
+        "behavior"
+      ]
+    },
+    {
+      "name": "Draggable",
+      "category": "Interaction",
+      "description": "Un widget qui peut être glissé-déposé.",
+      "properties": [
+        "child", "feedback",
+        "childWhenDragging",
+        "data", "axis",
+        "affinity", "maxSimultaneousDrags",
+        "onDragStarted", "onDragEnd",
+        "onDragUpdate", "onDraggableCanceled",
+        "dragAnchorStrategy",
+        "ignoringFeedbackSemantics",
+        "ignoringFeedbackPointer",
+        "rootOverlay",
+        "hitTestBehavior"
+      ]
+    },
+    {
+      "name": "InteractiveViewer",
+      "category": "Interaction",
+      "description": "Un widget qui permet le zoom et le déplacement.",
+      "properties": [
+        "child", "minScale", "maxScale",
+        "boundaryMargin", "constrained",
+        "scaleEnabled", "panEnabled",
+        "onInteractionStart",
+        "onInteractionUpdate",
+        "onInteractionEnd",
+        "transformationController",
+        "alignPanAxis",
+        "panAxis", "clipBehavior"
+      ]
+    },
+    {
+      "name": "AnimatedContainer",
+      "category": "Animation",
+      "description": "Un Container qui anime ses changements.",
+      "properties": [
+        "child", "duration", "curve",
+        "alignment", "padding", "margin",
+        "color", "decoration",
+        "foregroundDecoration",
+        "width", "height",
+        "constraints", "transform",
+        "transformAlignment",
+        "clipBehavior",
+        "onEnd"
+      ]
+    },
+    {
+      "name": "AnimatedOpacity",
+      "category": "Animation",
+      "description": "Un widget qui anime son opacité.",
+      "properties": [
+        "child", "opacity",
+        "duration", "curve",
+        "onEnd", "alwaysIncludeSemantics"
+      ]
+    },
+    {
+      "name": "AnimatedBuilder",
+      "category": "Animation",
+      "description": "Un constructeur qui se reconstruit quand une animation change.",
+      "properties": [
+        "animation", "builder", "child"
+      ]
+    },
+    {
+      "name": "Hero",
+      "category": "Animation",
+      "description": "Un widget qui crée une animation de transition entre écrans.",
+      "properties": [
+        "child", "tag",
+        "createRectTween",
+        "flightShuttleBuilder",
+        "placeholderBuilder",
+        "transitionOnUserGestures"
+      ]
+    },
+    {
+      "name": "FadeTransition",
+      "category": "Animation",
+      "description": "Une transition de fondu animée.",
+      "properties": [
+        "child", "opacity",
+        "alwaysIncludeSemantics"
+      ]
+    },
+    {
+      "name": "SlideTransition",
+      "category": "Animation",
+      "description": "Une transition de glissement animée.",
+      "properties": [
+        "child", "position",
+        "transformHitTests",
+        "textDirection"
+      ]
+    },
+    {
+      "name": "ScaleTransition",
+      "category": "Animation",
+      "description": "Une transition d'échelle animée.",
+      "properties": [
+        "child", "scale",
+        "alignment", "filterQuality"
+      ]
+    },
+    {
+      "name": "RotationTransition",
+      "category": "Animation",
+      "description": "Une transition de rotation animée.",
+      "properties": [
+        "child", "turns",
+        "alignment", "filterQuality"
+      ]
+    },
+    {
+      "name": "Opacity",
+      "category": "Rendering",
+      "description": "Un widget qui rend son enfant partiellement transparent.",
+      "properties": ["child", "opacity", "alwaysIncludeSemantics"]
+    },
+    {
+      "name": "Transform",
+      "category": "Rendering",
+      "description": "Un widget qui applique une transformation à son enfant.",
+      "properties": [
+        "child", "transform",
+        "alignment", "filterQuality",
+        "origin", "transformHitTests",
+        "type"
+      ]
+    },
+    {
+      "name": "ClipRRect",
+      "category": "Rendering",
+      "description": "Un widget qui découpe son enfant avec des coins arrondis.",
+      "properties": [
+        "child", "borderRadius",
+        "clipBehavior", "clipBehavior"
+      ]
+    },
+    {
+      "name": "ClipRect",
+      "category": "Rendering",
+      "description": "Un widget qui découpe son enfant dans un rectangle.",
+      "properties": [
+        "child", "clipBehavior",
+        "clipBehavior"
+      ]
+    },
+    {
+      "name": "ClipOval",
+      "category": "Rendering",
+      "description": "Un widget qui découpe son enfant en ovale.",
+      "properties": [
+        "child", "clipBehavior",
+        "clipBehavior"
+      ]
+    },
+    {
+      "name": "DecoratedBox",
+      "category": "Rendering",
+      "description": "Un widget qui peint une décoration autour de son enfant.",
+      "properties": [
+        "child", "decoration",
+        "position", "behavior"
+      ]
+    }
+  ]
 }
