@@ -3,6 +3,7 @@ import sys
 from typing import Any
 from urllib.parse import quote_plus
 
+from sqlalchemy import text
 from sqlmodel import SQLModel, Session, create_engine
 
 
@@ -81,9 +82,10 @@ def build_engine(database_url: str):
     try:
         engine = create_engine(database_url, **_engine_kwargs())
         
-        # Test de connexion immédiat
+        # Test de connexion immédiat - CORRIGÉ avec text()
         with engine.connect() as conn:
-            result = conn.execute("SELECT 1")
+            conn.execute(text("SELECT 1"))
+            conn.commit()
             
         print("✅ Connexion à la base de données réussie", file=sys.stderr)
         return engine
@@ -153,7 +155,8 @@ def get_database_state() -> dict[str, Any]:
     if engine is not None:
         try:
             with engine.connect() as conn:
-                conn.execute("SELECT 1")
+                conn.execute(text("SELECT 1"))  # CORRIGÉ avec text()
+                conn.commit()
             state["connection_check"] = "passed"
         except Exception as e:
             state["connection_check"] = "failed"
