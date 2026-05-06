@@ -2,6 +2,7 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session, select
 
+from ....core.security import require_admin
 from ....schemas.student import StudentWidgetChoice
 from ....schemas.assignment import AssignmentRead
 from ....models.student import Student
@@ -46,7 +47,10 @@ def get_assignments_summary(session: Session = Depends(get_session)):
 
 
 @router.delete("/reset")
-def reset_assignments(session: Session = Depends(get_session)):
+def reset_assignments(
+    session: Session = Depends(get_session),
+    _: None = Depends(require_admin),
+):
     service = AssignmentService(session)
     service.reset_assignments()
     return {"message": "Toutes les attributions ont été réinitialisées"}

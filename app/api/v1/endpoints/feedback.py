@@ -4,6 +4,7 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session, select
 
+from ....core.security import require_admin
 from ....db.database import get_session
 from ....models.feedback import UsefulnessFeedback
 from ....models.student import Student
@@ -90,7 +91,10 @@ def get_student_feedback(student_id: int, session: Session = Depends(get_session
 
 
 @router.get("/admin/summary", response_model=AdminFeedbackSummary)
-def get_feedback_summary(session: Session = Depends(get_session)):
+def get_feedback_summary(
+    session: Session = Depends(get_session),
+    _: None = Depends(require_admin),
+):
     students = session.exec(select(Student)).all()
     feedbacks = session.exec(select(UsefulnessFeedback)).all()
 
@@ -107,7 +111,10 @@ def get_feedback_summary(session: Session = Depends(get_session)):
 
 
 @router.get("/admin/responses", response_model=List[AdminFeedbackEntry])
-def list_feedback_responses(session: Session = Depends(get_session)):
+def list_feedback_responses(
+    session: Session = Depends(get_session),
+    _: None = Depends(require_admin),
+):
     students = session.exec(select(Student)).all()
     feedbacks = session.exec(select(UsefulnessFeedback)).all()
     feedback_by_student_id = {feedback.student_id: feedback for feedback in feedbacks}

@@ -48,7 +48,7 @@ class AssignmentService:
         statement = statement.join(Student, Assignment.student_id == Student.id)
         statement = statement.join(Widget, Assignment.widget_id == Widget.id)
         results = self.session.exec(statement).all()
-        
+
         return [
             {
                 "id": r[0].id,
