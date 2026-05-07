@@ -50,7 +50,6 @@ def get_student(student_id: int, session: Session = Depends(get_session)):
             "widget": {
                 "name": widget.name if widget else f"Widget #{assignment.widget_id}",
                 "description": widget.description if widget else "",
-                "category": widget.category if widget else "Inconnue",
             }
         }
         assignments_data.append(assignment_dict)
