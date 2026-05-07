@@ -1,0 +1,1135 @@
+{
+  "source": "Flutter Documentation",
+  "version": "3.27",
+  "total_widgets": 100,
+  "widgets": [
+    {
+      "name": "Container",
+      "category": "Layout",
+      "description": "Un widget qui combine peinture, positionnement et dimensionnement.",
+      "properties": [
+        "alignment",
+        "padding",
+        "margin",
+        "color",
+        "decoration",
+        "width",
+        "height",
+        "constraints",
+        "transform",
+        "child"
+      ]
+    },
+    {
+      "name": "Row",
+      "category": "Layout",
+      "description": "Un widget qui affiche ses enfants en ligne horizontale.",
+      "properties": [
+        "children",
+        "mainAxisAlignment",
+        "crossAxisAlignment",
+        "mainAxisSize",
+        "textDirection",
+        "spacing"
+      ]
+    },
+    {
+      "name": "Column",
+      "category": "Layout",
+      "description": "Un widget qui affiche ses enfants en colonne verticale.",
+      "properties": [
+        "children",
+        "mainAxisAlignment",
+        "crossAxisAlignment",
+        "mainAxisSize",
+        "textDirection",
+        "spacing"
+      ]
+    },
+    {
+      "name": "Stack",
+      "category": "Layout",
+      "description": "Un widget qui superpose ses enfants.",
+      "properties": [
+        "children",
+        "alignment",
+        "fit",
+        "clipBehavior"
+      ]
+    },
+    {
+      "name": "Expanded",
+      "category": "Layout",
+      "description": "Un widget qui étend un enfant dans Row/Column/Flex.",
+      "properties": [
+        "child",
+        "flex"
+      ]
+    },
+    {
+      "name": "SizedBox",
+      "category": "Layout",
+      "description": "Une boîte de taille fixe.",
+      "properties": [
+        "child",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "name": "Padding",
+      "category": "Layout",
+      "description": "Un widget qui ajoute du padding autour de son enfant.",
+      "properties": [
+        "child",
+        "padding"
+      ]
+    },
+    {
+      "name": "Center",
+      "category": "Layout",
+      "description": "Un widget qui centre son enfant.",
+      "properties": [
+        "child",
+        "widthFactor",
+        "heightFactor"
+      ]
+    },
+    {
+      "name": "Align",
+      "category": "Layout",
+      "description": "Un widget qui aligne son enfant.",
+      "properties": [
+        "child",
+        "alignment",
+        "widthFactor",
+        "heightFactor"
+      ]
+    },
+    {
+      "name": "Flexible",
+      "category": "Layout",
+      "description": "Un widget qui contrôle la flexibilité d'un enfant.",
+      "properties": [
+        "child",
+        "flex",
+        "fit"
+      ]
+    },
+    {
+      "name": "Wrap",
+      "category": "Layout",
+      "description": "Un widget qui enveloppe ses enfants sur plusieurs lignes.",
+      "properties": [
+        "children",
+        "direction",
+        "alignment",
+        "spacing",
+        "runSpacing"
+      ]
+    },
+    {
+      "name": "Text",
+      "category": "Basic",
+      "description": "Un widget de texte simple.",
+      "properties": [
+        "data",
+        "style",
+        "textAlign",
+        "overflow",
+        "maxLines",
+        "textScaleFactor"
+      ]
+    },
+    {
+      "name": "RichText",
+      "category": "Basic",
+      "description": "Un widget de texte avec styles multiples.",
+      "properties": [
+        "text",
+        "textAlign",
+        "softWrap",
+        "overflow",
+        "maxLines",
+        "textScaleFactor"
+      ]
+    },
+    {
+      "name": "Icon",
+      "category": "Basic",
+      "description": "Un widget icône Material Design.",
+      "properties": [
+        "icon",
+        "size",
+        "color",
+        "semanticLabel"
+      ]
+    },
+    {
+      "name": "Image",
+      "category": "Basic",
+      "description": "Un widget qui affiche une image.",
+      "properties": [
+        "image",
+        "width",
+        "height",
+        "fit",
+        "alignment",
+        "color",
+        "colorBlendMode"
+      ]
+    },
+    {
+      "name": "ElevatedButton",
+      "category": "Button",
+      "description": "Un bouton Material Design avec élévation.",
+      "properties": [
+        "onPressed",
+        "onLongPress",
+        "child",
+        "style",
+        "autofocus"
+      ]
+    },
+    {
+      "name": "TextButton",
+      "category": "Button",
+      "description": "Un bouton texte Material Design.",
+      "properties": [
+        "onPressed",
+        "onLongPress",
+        "child",
+        "style",
+        "autofocus"
+      ]
+    },
+    {
+      "name": "OutlinedButton",
+      "category": "Button",
+      "description": "Un bouton avec contour Material Design.",
+      "properties": [
+        "onPressed",
+        "onLongPress",
+        "child",
+        "style",
+        "autofocus"
+      ]
+    },
+    {
+      "name": "IconButton",
+      "category": "Button",
+      "description": "Un bouton icône Material Design.",
+      "properties": [
+        "onPressed",
+        "icon",
+        "iconSize",
+        "color",
+        "tooltip",
+        "padding"
+      ]
+    },
+    {
+      "name": "FloatingActionButton",
+      "category": "Button",
+      "description": "Un bouton d'action flottant circulaire.",
+      "properties": [
+        "onPressed",
+        "child",
+        "tooltip",
+        "backgroundColor",
+        "shape",
+        "mini"
+      ]
+    },
+    {
+      "name": "TextField",
+      "category": "Input",
+      "description": "Un champ de saisie de texte.",
+      "properties": [
+        "controller",
+        "decoration",
+        "keyboardType",
+        "obscureText",
+        "maxLines",
+        "onChanged",
+        "onSubmitted"
+      ]
+    },
+    {
+      "name": "TextFormField",
+      "category": "Input",
+      "description": "Un TextField intégré dans un Form.",
+      "properties": [
+        "controller",
+        "decoration",
+        "validator",
+        "onSaved",
+        "initialValue"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "category": "Input",
+      "description": "Une case à cocher Material Design.",
+      "properties": [
+        "value",
+        "onChanged",
+        "activeColor",
+        "checkColor"
+      ]
+    },
+    {
+      "name": "Radio",
+      "category": "Input",
+      "description": "Un bouton radio Material Design.",
+      "properties": [
+        "value",
+        "groupValue",
+        "onChanged",
+        "activeColor"
+      ]
+    },
+    {
+      "name": "Switch",
+      "category": "Input",
+      "description": "Un interrupteur Material Design.",
+      "properties": [
+        "value",
+        "onChanged",
+        "activeColor",
+        "inactiveThumbColor"
+      ]
+    },
+    {
+      "name": "Slider",
+      "category": "Input",
+      "description": "Un curseur de sélection de valeur.",
+      "properties": [
+        "value",
+        "onChanged",
+        "min",
+        "max",
+        "divisions",
+        "label",
+        "activeColor"
+      ]
+    },
+    {
+      "name": "DropdownButton",
+      "category": "Input",
+      "description": "Un menu déroulant de sélection.",
+      "properties": [
+        "items",
+        "value",
+        "onChanged",
+        "hint",
+        "isExpanded"
+      ]
+    },
+    {
+      "name": "AppBar",
+      "category": "Material",
+      "description": "Une barre d'application Material Design.",
+      "properties": [
+        "title",
+        "leading",
+        "actions",
+        "backgroundColor",
+        "elevation",
+        "centerTitle"
+      ]
+    },
+    {
+      "name": "Scaffold",
+      "category": "Material",
+      "description": "La structure visuelle de base Material Design.",
+      "properties": [
+        "appBar",
+        "body",
+        "floatingActionButton",
+        "drawer",
+        "bottomNavigationBar"
+      ]
+    },
+    {
+      "name": "Drawer",
+      "category": "Material",
+      "description": "Un panneau de navigation coulissant.",
+      "properties": [
+        "child",
+        "elevation",
+        "width"
+      ]
+    },
+    {
+      "name": "BottomNavigationBar",
+      "category": "Material",
+      "description": "Une barre de navigation inférieure.",
+      "properties": [
+        "items",
+        "currentIndex",
+        "onTap",
+        "type",
+        "backgroundColor"
+      ]
+    },
+    {
+      "name": "TabBar",
+      "category": "Material",
+      "description": "Une barre d'onglets Material Design.",
+      "properties": [
+        "tabs",
+        "controller",
+        "isScrollable",
+        "indicatorColor",
+        "labelColor"
+      ]
+    },
+    {
+      "name": "TabBarView",
+      "category": "Material",
+      "description": "Une vue d'onglets.",
+      "properties": [
+        "children",
+        "controller",
+        "physics"
+      ]
+    },
+    {
+      "name": "Card",
+      "category": "Material",
+      "description": "Une carte Material Design.",
+      "properties": [
+        "child",
+        "color",
+        "elevation",
+        "shape",
+        "margin"
+      ]
+    },
+    {
+      "name": "ListTile",
+      "category": "Material",
+      "description": "Une ligne de liste structurée.",
+      "properties": [
+        "leading",
+        "title",
+        "subtitle",
+        "trailing",
+        "onTap",
+        "selected"
+      ]
+    },
+    {
+      "name": "SnackBar",
+      "category": "Material",
+      "description": "Une notification légère en bas.",
+      "properties": [
+        "content",
+        "backgroundColor",
+        "action",
+        "duration",
+        "behavior"
+      ]
+    },
+    {
+      "name": "AlertDialog",
+      "category": "Material",
+      "description": "Une boîte de dialogue d'alerte.",
+      "properties": [
+        "title",
+        "content",
+        "actions",
+        "backgroundColor"
+      ]
+    },
+    {
+      "name": "Chip",
+      "category": "Material",
+      "description": "Un widget compact d'information.",
+      "properties": [
+        "label",
+        "avatar",
+        "deleteIcon",
+        "onDeleted",
+        "backgroundColor"
+      ]
+    },
+    {
+      "name": "DataTable",
+      "category": "Material",
+      "description": "Un tableau de données.",
+      "properties": [
+        "columns",
+        "rows",
+        "sortColumnIndex",
+        "sortAscending"
+      ]
+    },
+    {
+      "name": "Divider",
+      "category": "Material",
+      "description": "Une ligne de séparation horizontale.",
+      "properties": [
+        "height",
+        "thickness",
+        "indent",
+        "endIndent",
+        "color"
+      ]
+    },
+    {
+      "name": "CircleAvatar",
+      "category": "Material",
+      "description": "Un avatar circulaire.",
+      "properties": [
+        "child",
+        "backgroundColor",
+        "backgroundImage",
+        "radius"
+      ]
+    },
+    {
+      "name": "ListView",
+      "category": "Scroll",
+      "description": "Une liste déroulante de widgets.",
+      "properties": [
+        "children",
+        "scrollDirection",
+        "reverse",
+        "controller",
+        "itemExtent",
+        "padding"
+      ]
+    },
+    {
+      "name": "GridView",
+      "category": "Scroll",
+      "description": "Une grille déroulante 2D.",
+      "properties": [
+        "children",
+        "gridDelegate",
+        "scrollDirection",
+        "padding"
+      ]
+    },
+    {
+      "name": "SingleChildScrollView",
+      "category": "Scroll",
+      "description": "Un conteneur déroulant pour un enfant.",
+      "properties": [
+        "child",
+        "scrollDirection",
+        "padding",
+        "reverse"
+      ]
+    },
+    {
+      "name": "PageView",
+      "category": "Scroll",
+      "description": "Une liste déroulante page par page.",
+      "properties": [
+        "children",
+        "controller",
+        "onPageChanged",
+        "scrollDirection"
+      ]
+    },
+    {
+      "name": "GestureDetector",
+      "category": "Interaction",
+      "description": "Détecte les gestes de l'utilisateur.",
+      "properties": [
+        "child",
+        "onTap",
+        "onDoubleTap",
+        "onLongPress",
+        "onPanUpdate"
+      ]
+    },
+    {
+      "name": "InkWell",
+      "category": "Interaction",
+      "description": "Effet d'ondulation au toucher.",
+      "properties": [
+        "child",
+        "onTap",
+        "onLongPress",
+        "splashColor",
+        "borderRadius"
+      ]
+    },
+    {
+      "name": "Dismissible",
+      "category": "Interaction",
+      "description": "Widget balayable pour le faire disparaître.",
+      "properties": [
+        "child",
+        "onDismissed",
+        "direction",
+        "background"
+      ]
+    },
+    {
+      "name": "AnimatedContainer",
+      "category": "Animation",
+      "description": "Container avec animations automatiques.",
+      "properties": [
+        "child",
+        "duration",
+        "curve",
+        "color",
+        "width",
+        "height",
+        "padding"
+      ]
+    },
+    {
+      "name": "Hero",
+      "category": "Animation",
+      "description": "Animation de transition entre écrans.",
+      "properties": [
+        "child",
+        "tag",
+        "flightShuttleBuilder",
+        "placeholderBuilder"
+      ]
+    },
+    {
+      "name": "Positioned",
+      "category": "Layout",
+      "description": "Positionne un enfant dans un Stack.",
+      "properties": [
+        "child",
+        "top",
+        "bottom",
+        "left",
+        "right",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "name": "Offstage",
+      "category": "Layout",
+      "description": "Cache un widget sans le retirer du layout.",
+      "properties": [
+        "child",
+        "offstage"
+      ]
+    },
+    {
+      "name": "AspectRatio",
+      "category": "Layout",
+      "description": "Force un ratio hauteur/largeur.",
+      "properties": [
+        "child",
+        "aspectRatio"
+      ]
+    },
+    {
+      "name": "ConstrainedBox",
+      "category": "Layout",
+      "description": "Impose des contraintes à son enfant.",
+      "properties": [
+        "child",
+        "constraints"
+      ]
+    },
+    {
+      "name": "FittedBox",
+      "category": "Layout",
+      "description": "Redimensionne son enfant pour qu'il rentre.",
+      "properties": [
+        "child",
+        "fit",
+        "alignment",
+        "clipBehavior"
+      ]
+    },
+    {
+      "name": "OverflowBox",
+      "category": "Layout",
+      "description": "Permet à son enfant de dépasser.",
+      "properties": [
+        "child",
+        "minWidth",
+        "maxWidth",
+        "minHeight",
+        "maxHeight",
+        "alignment"
+      ]
+    },
+    {
+      "name": "IntrinsicHeight",
+      "category": "Layout",
+      "description": "Force sa hauteur à la hauteur intrinsèque de son enfant.",
+      "properties": [
+        "child"
+      ]
+    },
+    {
+      "name": "IntrinsicWidth",
+      "category": "Layout",
+      "description": "Force sa largeur à la largeur intrinsèque de son enfant.",
+      "properties": [
+        "child"
+      ]
+    },
+    {
+      "name": "LimitedBox",
+      "category": "Layout",
+      "description": "Limite la taille de son enfant.",
+      "properties": [
+        "child",
+        "maxWidth",
+        "maxHeight"
+      ]
+    },
+    {
+      "name": "FractionallySizedBox",
+      "category": "Layout",
+      "description": "Taille relative au parent.",
+      "properties": [
+        "child",
+        "widthFactor",
+        "heightFactor",
+        "alignment"
+      ]
+    },
+    {
+      "name": "SelectableText",
+      "category": "Text",
+      "description": "Texte sélectionnable par l'utilisateur.",
+      "properties": [
+        "data",
+        "style",
+        "textAlign",
+        "maxLines",
+        "cursorColor",
+        "showCursor"
+      ]
+    },
+    {
+      "name": "Placeholder",
+      "category": "Basic",
+      "description": "Widget de remplacement temporaire.",
+      "properties": [
+        "color",
+        "strokeWidth",
+        "fallbackWidth",
+        "fallbackHeight"
+      ]
+    },
+    {
+      "name": "Spacer",
+      "category": "Layout",
+      "description": "Espace flexible dans Row/Column.",
+      "properties": [
+        "flex"
+      ]
+    },
+    {
+      "name": "SafeArea",
+      "category": "Layout",
+      "description": "Évite les zones système (notch, barres).",
+      "properties": [
+        "child",
+        "top",
+        "bottom",
+        "left",
+        "right",
+        "minimum"
+      ]
+    },
+    {
+      "name": "MediaQuery",
+      "category": "Utilities",
+      "description": "Accède aux informations du média.",
+      "properties": [
+        "child",
+        "data"
+      ]
+    },
+    {
+      "name": "Theme",
+      "category": "Utilities",
+      "description": "Applique un thème à ses descendants.",
+      "properties": [
+        "child",
+        "data"
+      ]
+    },
+    {
+      "name": "Directionality",
+      "category": "Utilities",
+      "description": "Définit la direction du texte.",
+      "properties": [
+        "child",
+        "textDirection"
+      ]
+    },
+    {
+      "name": "DefaultTextStyle",
+      "category": "Text",
+      "description": "Style de texte par défaut pour descendants.",
+      "properties": [
+        "child",
+        "style",
+        "textAlign",
+        "softWrap",
+        "overflow",
+        "maxLines"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "category": "Material",
+      "description": "Info-bulle au survol.",
+      "properties": [
+        "message",
+        "child",
+        "height",
+        "padding",
+        "verticalOffset",
+        "decoration"
+      ]
+    },
+    {
+      "name": "PopupMenuButton",
+      "category": "Button",
+      "description": "Bouton avec menu contextuel.",
+      "properties": [
+        "itemBuilder",
+        "onSelected",
+        "icon",
+        "tooltip",
+        "offset"
+      ]
+    },
+    {
+      "name": "DropdownButtonFormField",
+      "category": "Input",
+      "description": "Dropdown intégré dans un Form.",
+      "properties": [
+        "items",
+        "value",
+        "onChanged",
+        "decoration",
+        "validator"
+      ]
+    },
+    {
+      "name": "SegmentedButton",
+      "category": "Button",
+      "description": "Groupe de boutons segmentés.",
+      "properties": [
+        "segments",
+        "selected",
+        "onSelectionChanged",
+        "style"
+      ]
+    },
+    {
+      "name": "NavigationBar",
+      "category": "Material",
+      "description": "Barre de navigation Material 3.",
+      "properties": [
+        "destinations",
+        "selectedIndex",
+        "onDestinationSelected",
+        "backgroundColor"
+      ]
+    },
+    {
+      "name": "NavigationRail",
+      "category": "Material",
+      "description": "Rail de navigation latéral.",
+      "properties": [
+        "destinations",
+        "selectedIndex",
+        "extended",
+        "leading",
+        "trailing"
+      ]
+    },
+    {
+      "name": "BottomSheet",
+      "category": "Material",
+      "description": "Panneau coulissant depuis le bas.",
+      "properties": [
+        "builder",
+        "onClosing",
+        "backgroundColor",
+        "shape",
+        "enableDrag"
+      ]
+    },
+    {
+      "name": "Stepper",
+      "category": "Material",
+      "description": "Widget d'étapes séquentielles.",
+      "properties": [
+        "steps",
+        "currentStep",
+        "onStepContinue",
+        "onStepCancel",
+        "type"
+      ]
+    },
+    {
+      "name": "ExpansionTile",
+      "category": "Material",
+      "description": "ListTile extensible.",
+      "properties": [
+        "title",
+        "children",
+        "initiallyExpanded",
+        "onExpansionChanged",
+        "leading"
+      ]
+    },
+    {
+      "name": "AboutDialog",
+      "category": "Material",
+      "description": "Dialogue À propos.",
+      "properties": [
+        "applicationName",
+        "applicationVersion",
+        "applicationIcon",
+        "children"
+      ]
+    },
+    {
+      "name": "SimpleDialog",
+      "category": "Material",
+      "description": "Dialogue simple avec options.",
+      "properties": [
+        "title",
+        "children",
+        "backgroundColor",
+        "elevation"
+      ]
+    },
+    {
+      "name": "DatePicker",
+      "category": "Input",
+      "description": "Sélecteur de date.",
+      "properties": [
+        "initialDate",
+        "firstDate",
+        "lastDate",
+        "onDateChanged"
+      ]
+    },
+    {
+      "name": "TimePicker",
+      "category": "Input",
+      "description": "Sélecteur d'heure.",
+      "properties": [
+        "initialTime",
+        "onTimeChanged"
+      ]
+    },
+    {
+      "name": "Autocomplete",
+      "category": "Input",
+      "description": "Champ avec suggestions.",
+      "properties": [
+        "optionsBuilder",
+        "onSelected",
+        "initialValue"
+      ]
+    },
+    {
+      "name": "Form",
+      "category": "Input",
+      "description": "Conteneur de formulaire avec validation.",
+      "properties": [
+        "child",
+        "onChanged",
+        "autovalidateMode"
+      ]
+    },
+    {
+      "name": "ReorderableListView",
+      "category": "Scroll",
+      "description": "ListView avec réorganisation.",
+      "properties": [
+        "children",
+        "onReorder",
+        "scrollDirection",
+        "padding"
+      ]
+    },
+    {
+      "name": "CustomScrollView",
+      "category": "Scroll",
+      "description": "ScrollView avec slivers personnalisés.",
+      "properties": [
+        "slivers",
+        "scrollDirection",
+        "controller",
+        "physics"
+      ]
+    },
+    {
+      "name": "SliverAppBar",
+      "category": "Scroll",
+      "description": "AppBar pour CustomScrollView.",
+      "properties": [
+        "title",
+        "expandedHeight",
+        "floating",
+        "pinned",
+        "snap"
+      ]
+    },
+    {
+      "name": "SliverList",
+      "category": "Scroll",
+      "description": "Liste sliver dans CustomScrollView.",
+      "properties": [
+        "delegate"
+      ]
+    },
+    {
+      "name": "SliverGrid",
+      "category": "Scroll",
+      "description": "Grille sliver dans CustomScrollView.",
+      "properties": [
+        "delegate",
+        "gridDelegate"
+      ]
+    },
+    {
+      "name": "NestedScrollView",
+      "category": "Scroll",
+      "description": "ScrollView imbriqué.",
+      "properties": [
+        "headerSliverBuilder",
+        "body",
+        "controller"
+      ]
+    },
+    {
+      "name": "InteractiveViewer",
+      "category": "Interaction",
+      "description": "Zoom et déplacement interactif.",
+      "properties": [
+        "child",
+        "minScale",
+        "maxScale",
+        "constrained",
+        "boundaryMargin"
+      ]
+    },
+    {
+      "name": "Draggable",
+      "category": "Interaction",
+      "description": "Widget glissable.",
+      "properties": [
+        "child",
+        "feedback",
+        "data",
+        "axis",
+        "onDragStarted",
+        "onDragEnd"
+      ]
+    },
+    {
+      "name": "DragTarget",
+      "category": "Interaction",
+      "description": "Zone de dépôt pour Draggable.",
+      "properties": [
+        "builder",
+        "onWillAccept",
+        "onAccept",
+        "onLeave"
+      ]
+    },
+    {
+      "name": "LongPressDraggable",
+      "category": "Interaction",
+      "description": "Draggable activé par appui long.",
+      "properties": [
+        "child",
+        "feedback",
+        "data",
+        "onDragStarted"
+      ]
+    },
+    {
+      "name": "AnimatedOpacity",
+      "category": "Animation",
+      "description": "Animation de fondu.",
+      "properties": [
+        "child",
+        "opacity",
+        "duration",
+        "curve",
+        "onEnd"
+      ]
+    },
+    {
+      "name": "AnimatedBuilder",
+      "category": "Animation",
+      "description": "Constructeur animé.",
+      "properties": [
+        "animation",
+        "builder",
+        "child"
+      ]
+    },
+    {
+      "name": "FadeTransition",
+      "category": "Animation",
+      "description": "Transition de fondu.",
+      "properties": [
+        "child",
+        "opacity"
+      ]
+    },
+    {
+      "name": "SlideTransition",
+      "category": "Animation",
+      "description": "Transition de glissement.",
+      "properties": [
+        "child",
+        "position",
+        "textDirection"
+      ]
+    },
+    {
+      "name": "ScaleTransition",
+      "category": "Animation",
+      "description": "Transition d'échelle.",
+      "properties": [
+        "child",
+        "scale",
+        "alignment"
+      ]
+    },
+    {
+      "name": "RotationTransition",
+      "category": "Animation",
+      "description": "Transition de rotation.",
+      "properties": [
+        "child",
+        "turns",
+        "alignment"
+      ]
+    },
+    {
+      "name": "TweenAnimationBuilder",
+      "category": "Animation",
+      "description": "Animation avec Tween.",
+      "properties": [
+        "tween",
+        "duration",
+        "builder",
+        "child"
+      ]
+    }
+  ]
+}
