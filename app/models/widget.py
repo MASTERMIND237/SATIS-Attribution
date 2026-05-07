@@ -5,6 +5,7 @@ from sqlmodel import SQLModel, Field, Relationship
 class WidgetBase(SQLModel):
     name: str = Field(index=True, unique=True)
     description: Optional[str] = None
+    category: Optional[str] = None  # ← AJOUTER CETTE LIGNE
 
 
 class Widget(WidgetBase, table=True):
